@@ -93,22 +93,22 @@ public class Palabras {
         ArrayList<String> l = new ArrayList();
         
         switch (idiomaAleatorio){
-            case 0: //español
+            case 0: //Infinitivo
                 
-                if (!this.getAleman().equals(p.getAleman())) l.add("Aleman");
-                if (!this.getIngles().equals(p.getIngles())) l.add("Ingles");
-                
+                if (!this.getAleman().equals(p.getAleman())) l.add("Traducción");
+                if (!this.getIngles().equals(p.getIngles())) l.add("Infinitivo");
+                 
                 break;
-            case 1: //ingles
+            case 1: //Past Simple
                 
-                if (!this.getAleman().equals(p.getAleman())) l.add("Aleman");
+                if (!this.getAleman().equals(p.getAleman())) l.add("Traducción");
                 if (!this.getEspañol().equals(p.getEspañol())) l.add("Español");
                 
                 break;
-            case 2: //aleman
+            case 2: //Tradución
                 
-                if (!this.getEspañol().equals(p.getEspañol())) l.add("Español");
-                if (!this.getIngles().equals(p.getIngles())) l.add("Ingles");
+                if (!this.getEspañol().equals(p.getEspañol())) l.add("Infinitivo");
+                if (!this.getIngles().equals(p.getIngles())) l.add("Past Simple");
                 
                 break;
         }
