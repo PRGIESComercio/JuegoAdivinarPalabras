@@ -85,7 +85,7 @@
       <SubComponents>
         <Component class="javax.swing.JLabel" name="jLabelEspa&#xf1;ol">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Espa&#xf1;ol"/>
+            <Property name="text" type="java.lang.String" value="Infitivo"/>
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
@@ -95,7 +95,7 @@
         </Component>
         <Component class="javax.swing.JLabel" name="jLabelIngles">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Ingl&#xe9;s"/>
+            <Property name="text" type="java.lang.String" value="Past Simple"/>
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
@@ -105,7 +105,7 @@
         </Component>
         <Component class="javax.swing.JLabel" name="jLabelAleman">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Aleman"/>
+            <Property name="text" type="java.lang.String" value="Traducci&#xf3;n"/>
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout$GridBagConstraintsDescription">

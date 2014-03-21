@@ -66,9 +66,9 @@ public class Interfaz extends javax.swing.JFrame {
         this.jLabelPuntuacion.setHorizontalAlignment(javax.swing.JLabel.CENTER);
         
         //iconos banderas labels
-        this.jLabelEspañol.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/iescomercio/edd/mapas/juegopalabras/resources/español.png")));
+        this.jLabelEspañol.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/iescomercio/edd/mapas/juegopalabras/resources/ingles.png")));
         this.jLabelIngles.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/iescomercio/edd/mapas/juegopalabras/resources/ingles.png")));
-        this.jLabelAleman.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/iescomercio/edd/mapas/juegopalabras/resources/aleman.png")));
+        this.jLabelAleman.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/iescomercio/edd/mapas/juegopalabras/resources/español.png")));
         
         //alineación label y el texto de los labels respecto al icono bandera
         this.jLabelEspañol.setHorizontalAlignment(javax.swing.JLabel.CENTER);
@@ -200,7 +200,7 @@ public class Interfaz extends javax.swing.JFrame {
 
         jPanelResto.setLayout(new java.awt.GridBagLayout());
 
-        jLabelEspañol.setText("Español");
+        jLabelEspañol.setText("Infitivo");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 0;
@@ -209,7 +209,7 @@ public class Interfaz extends javax.swing.JFrame {
         gridBagConstraints.insets = new java.awt.Insets(5, 5, 5, 5);
         jPanelResto.add(jLabelEspañol, gridBagConstraints);
 
-        jLabelIngles.setText("Inglés");
+        jLabelIngles.setText("Past Simple");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 0;
@@ -218,7 +218,7 @@ public class Interfaz extends javax.swing.JFrame {
         gridBagConstraints.insets = new java.awt.Insets(5, 5, 5, 5);
         jPanelResto.add(jLabelIngles, gridBagConstraints);
 
-        jLabelAleman.setText("Aleman");
+        jLabelAleman.setText("Traducción");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 2;
         gridBagConstraints.gridy = 0;

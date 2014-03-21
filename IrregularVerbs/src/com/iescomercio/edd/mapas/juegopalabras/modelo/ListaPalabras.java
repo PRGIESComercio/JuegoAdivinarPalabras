@@ -1,7 +1,16 @@
 package com.iescomercio.edd.mapas.juegopalabras.modelo;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.net.URISyntaxException;
 import java.util.HashMap;
 import java.util.Set;
+import java.util.StringTokenizer;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  * Clase para guardar en un mapa de tipo HashMap String en la clave y Palabras en el objeto
@@ -32,24 +41,45 @@ public class ListaPalabras {
     /**
      * Método que carga la lista de palabras con 20 palabras en ingles, alemán y español
      */
-    public void cargarLista(){
-        
-        String[] palabrasEsp = {"libro","vaso","casa","dibujos","archivo","cerilla","diario","paraguas","toalla","almohada","sabana","manta","abrigo","blusa","vestido","diccionario","alfombra","cejas","pintura","mascara"};
-        String[] palabrasIng = {"book","glass","house","cartoons","file","match","diary","umbrella","towel","pillow","sheet","blanket","coat","blouse","dress","dictionary","carpet","eyesbrow","paint","mask"};
-        String[] palabrasAle = {"buch","glas","zuhause","zeichnungen","archivieren","streichholzer","taglich","regenschirm","handtuch","kissen","savanne","decke","mantel","bluse","kleid","worterbuch","teppich","augenbrauen","malerei","maske"};
-        
+    public void cargarLista(){  
         Palabras p;
+        BufferedReader fpalabras;
+        StringTokenizer linea;
+        String aux;
         
-        for (int i = 0; i < palabrasEsp.length; i++) {
-            
-            p = new Palabras();
-            
-            p.setEspañol(palabrasEsp[i]);
-            p.setIngles(palabrasIng[i]);
-            p.setAleman(palabrasAle[i]);
-            
-            this.listaPalabras.put(p.getEspañol(), p);
-            
+        
+        try {     
+            // Abrir fichero
+            File f = new File(getClass().getResource("/com/iescomercio/edd/mapas/juegopalabras/resources/verbos.txt").toURI());
+            fpalabras = new BufferedReader (new FileReader(f));            
+            aux = fpalabras.readLine();
+          
+            while (aux!=null){ 
+                linea = new StringTokenizer(aux, "\t");
+
+                int i = linea.countTokens();
+                
+                p = new Palabras();           
+//                String s1= linea.nextToken();
+//                String s2= linea.nextToken();
+//                String s3= linea.nextToken();
+//                String s4=  (new StringTokenizer(linea.nextToken(), ",")).nextToken();
+//                System.out.println(s1 + " " + s2 + " " + s3 + " " + s4);
+                
+                p.setEspañol(linea.nextToken());
+                p.setIngles(linea.nextToken());
+                linea.nextToken();
+                p.setAleman(new StringTokenizer(linea.nextToken(), ",").nextToken());
+//                
+                this.listaPalabras.put(p.getEspañol(), p);
+                aux = fpalabras.readLine();                
+            }
+        } catch (FileNotFoundException ex) {
+            Logger.getLogger(ListaPalabras.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (IOException ex) {
+            Logger.getLogger(ListaPalabras.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (URISyntaxException ex) {
+            Logger.getLogger(ListaPalabras.class.getName()).log(Level.SEVERE, null, ex);
         }
         
         

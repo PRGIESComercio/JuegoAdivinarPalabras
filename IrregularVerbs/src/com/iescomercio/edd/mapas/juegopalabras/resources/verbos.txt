@@ -1,10 +1,10 @@
 arise	arose	arisen	levantarse, surgir, presentarse
 awake	awoke	awoken	despertarse
 be	was/were	been	ser, estar
-bear	bore	born	nacer
+bear	bore	born	aguantar
 beat	beat	beaten	golpear,vencer, ganarle a
-become	became	become	llegar a ser…, convertirse en…
-bend	bent	bent	curvar, doblar
+become	became	become	llegar a serï¿½, convertirse enï¿½
+bend	bent	bent	doblar
 bet	bet	bet	apostar
 bind	bound	bound	atar, amarrar, vendar
 bid	bid	bid	ofertar, pujar por algo
@@ -30,14 +30,14 @@ deal	dealt	dealt	tratar, acordar
 dig	dug	dug	cavar
 do/does	did	done	hacer, preparar
 draw	drew	drawn	dibujar, pintar, trazar
-dream	dreamt	dreamt	soñar
+dream	dreamt	dreamt	soï¿½ar
 drink	drank	drunk	beber
 drive	drove	driven	conducir
 eat	ate	eaten	comer
 feed	fed	fed	alimentar
 feel	felt	felt	sentir
 fight	fought	fought	pelear, luchar
-flee	fled	fled	huir de…
+flee	fled	fled	huir deï¿½
 fly	flew	flown	volar
 forbid	forbade	forbidden	prohibir
 forget	forgot	forgotten	olvidar
@@ -52,7 +52,7 @@ hear	heard	heard	escuchar, oir
 hide	hid	hidden	esconder, esconderse
 hit	hit	hit	golpear
 hold	held	held	sujetar, agarrar, detener, soportar
-hurt	hurt	hurt	herir, lesionar, dañar
+hurt	hurt	hurt	herir, lesionar, daï¿½ar
 keep	kept	kept	guardar, mantener
 know	knew	known	saber, conocer
 kneel	knelt	knelt	arrodillarse
@@ -75,7 +75,7 @@ overcome	overcame	overcome	vencer
 pay	paid	paid	pagar
 put	put	put	poner, colocar
 read	read	read	leer
-ring	rang	rang	sonar, tocar, llamar por teléfono
+ring	rang	rang	sonar, tocar, llamar por telï¿½fono
 rise	rose	risen	elevarse, levantarse
 run	ran	run	correr
 say	said	said	decir
